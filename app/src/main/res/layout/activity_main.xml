@@ -12,45 +12,6 @@
     android:layout_alignBottom="@id/activity_main">
 
     <LinearLayout
-        android:id="@+id/l2"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/l1"
-        android:layout_alignParentEnd="false">
-
-        <TextView
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:background="@android:color/white" />
-
-        <TextView
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:background="@android:color/white"/>
-
-        <TextView
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:layout_weight="1"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:background="@android:color/white"/>
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/l1"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -83,5 +44,61 @@
             android:layout_weight="1"
             android:onClick="change"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_alignParentEnd="false">
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+
+        <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"/>
+    </LinearLayout>
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_below="@+id/l2"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset"
+        />
 
 </RelativeLayout>
